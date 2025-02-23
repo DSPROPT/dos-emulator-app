@@ -26,13 +26,13 @@ const DosEmulator = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
       <h1>DOS Emulator (JS-DOS v8)</h1>
       <div
         ref={dosContainerRef}
         style={{
-          width: "800px",
-          height: "600px",
+          width: "100%",
+          height: "calc(100% - 2rem)", // Adjust height to account for the header
           border: "1px solid #000",
           marginTop: "1rem",
         }}
